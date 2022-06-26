@@ -1,0 +1,223 @@
+.wrapper {
+    display: flex;
+    width: 100vw;
+}
+.main {
+    flex: 75%;
+}
+
+.blank- {
+    flex: 25%;
+}
+
+.title {
+    padding-top: 64px;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.intro {
+    text-align: justify;
+    width: 60%;
+    font-size: 22px;
+}
+
+.skill-title {
+    font-weight: bold;
+    margin-bottom: 18px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.card {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-bottom: 30px;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.webP {
+    background-image: url("../images/web.jpg");
+    background-position: center;
+}
+
+.mobileP {
+    background-image: url("../images/mobile.jpg");
+    background-position: center;
+}
+
+.card h4 {
+    text-align: center;
+}
+
+.card:hover{
+    transform: translateY(4px);
+    transition: 0.45s ease-out;
+    box-shadow: none;
+}
+
+.skill-desc{
+    text-align: justify;
+    width: 90%;
+    margin-bottom: 24px;
+}
+
+.project-title {
+    margin-bottom: 20px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.cards {
+    margin-bottom: 100px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardp {
+    position: relative;
+    max-width: 40%;
+    max-height: 350px;
+    box-shadow: 0 40px 60px -6px black;
+    margin: 32px;
+}
+
+.card-title {
+    display: block;
+    text-align: center;
+    color: #fff;
+    background-color: #6184a8;
+    padding: 2%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.cardp img {
+    width: 100%;
+    height: 98%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+}
+
+.container {
+    height: 200px;
+    /* width: 600px; */
+    /* top: 60px; */
+    /* left: calc(50% - 300px); */
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+  
+.card2 {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+  
+.weather {
+    background-image: url("../images/djong_weather-logo.jpg");
+    background-size: cover;
+}
+
+.seiyou {
+    background-image: url("../images/seiyou-logo.jpg");
+    background-size: cover;
+}
+  
+.card2:not(:first-child) {
+      margin-left: -50px;
+}
+  
+.card2:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+  
+.card2:hover ~ .card2 {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+  
+.title-card {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+@media screen and (width: 1024px) {
+    #about, #project {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #about, #project {
+        margin-left: 32px;
+    }
+    .blank- {
+        flex: 0;
+    }
+    .intro {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card h4 {
+        font-size: 18px;
+    }
+
+    .skill-desc {
+        font-size: 14px;
+    }
+
+    .container {
+        height: 150px;
+        /* width: 80%; */
+    }
+    
+    .card2 {
+        height: 150px;
+        width: 150px;
+    }
+
+    .title-card {
+        font-size: 16px;
+    }
+}
