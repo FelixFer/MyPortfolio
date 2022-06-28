@@ -4,7 +4,8 @@
 
 .App {
     width: 100vw;
-    background: linear-gradient(-45deg, #fae1d9, #ebffea, #e1f7ff, #d7fff6);
+    /* background: linear-gradient(-45deg, #fae1d9, #ebffea, #e1f7ff, #d7fff6); */
+    background-color: #434343;
 	background-size: 400% 400%;
 	animation: gradient 8s ease infinite;
 }
@@ -30,8 +31,9 @@ body {
     position: fixed;
     height: 100%;
     width: 250px;
-    background-image: linear-gradient(to bottom, #b0fffe, #aefbff, #aef7ff, #aef2ff, #afeeff, #b2edff, #b6ebff, #b9eaff, #beecff, #c3edff, #c7efff, #ccf0ff);
+    /* background-image: linear-gradient(to bottom, #b0fffe, #aefbff, #aef7ff, #aef2ff, #afeeff, #b2edff, #b6ebff, #b9eaff, #beecff, #c3edff, #c7efff, #ccf0ff); */
     /* background-image: linear-gradient(to bottom, #536767, #566b6c, #5a6e71, #5d7275, #61757a, #66797f, #6b7e84, #708289, #778890, #7d8f96, #84959d, #8b9ca4); */
+    background-color: #0e0e0e;
     z-index: 1;
 }
 
@@ -48,7 +50,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: row;
-    color: rgb(63, 63, 63);
+    color: rgb(222, 222, 222);
     justify-content: center;
     align-items: center;
 }
@@ -65,17 +67,18 @@ body {
     position: fixed;
     top: 0;
     z-index: 1;
-    box-shadow: 0px 5px 10px 0px #aaa;
+    box-shadow: 0px 5px 10px 0px rgb(145, 145, 145);
 }
 
 .btnbar {
     width: 100vw;
     height: 40px;
-    background-image: linear-gradient(to top, #c8eeff, #c4eaff, #c2e6ff, #c0e2ff, #c0ddff, #bdd9ff, #bbd6ff, #bad2ff, #b5cfff, #afcbff, #aac8ff, #a4c5ff);
+    /* background-image: linear-gradient(to top, #c8eeff, #c4eaff, #c2e6ff, #c0e2ff, #c0ddff, #bdd9ff, #bbd6ff, #bad2ff, #b5cfff, #afcbff, #aac8ff, #a4c5ff); */
+    background-color: #1c1c1c;
     margin: 0;
     display: flex;
     flex-direction: row;
-    color: black;
+    color: white;
     justify-content:start;
     align-items:center;
     text-decoration: none;
@@ -83,7 +86,7 @@ body {
 }
 
 .btnbar:hover {
-    color: #000;
+    color: white;
 }
 
 .btnbar #icon {
@@ -123,13 +126,13 @@ body {
     margin: 0;
     display: flex;
     flex-direction: row;
-    color: black;
+    color: white;
     justify-content:start;
     align-items:center;
 }
 
 .closeBtnBar:hover {
-    color: #000;
+    color: white;
 }
 
 .closeBtnBar #icon {
@@ -150,13 +153,13 @@ body {
     margin-right: auto;
     border-radius: 50%;
     width: 50%;
-    border: 4px solid #272133;
+    border: 4px solid #c64e4e;
 }
 
 .email {
     font-weight: bold;
     font-size: 13px;
-    color: #373737;
+    color: #d5d5d5;
     text-align: center;
 }
 
@@ -174,7 +177,7 @@ footer {
     margin-left: 16px;
     font-size: 12px;
     position: fixed;
-    color: #373737;
+    color: rgb(202, 202, 202);
     bottom: 0;
 }
 
@@ -185,7 +188,7 @@ footer {
 }
 
 .icons {
-    color: #000;
+    color: white;
     margin-left: 20px;
     text-decoration: none;
 }

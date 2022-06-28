@@ -11,12 +11,13 @@
 }
 
 .title {
+    color: #FFFFFF;
     padding-top: 64px;
-    text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
+    text-shadow: 0 1px 0 rgb(161, 161, 161), 
+               0 2px 0 #a4a4a4,
+               0 3px 0 rgb(126, 126, 126),
+               0 4px 0 #757575,
+               0 5px 0 rgb(103, 103, 103),
                0 6px 1px rgba(0,0,0,.1),
                0 0 5px rgba(0,0,0,.1),
                0 1px 3px rgba(0,0,0,.3),
@@ -27,12 +28,14 @@
 }
 
 .intro {
+    color: #FFFFFF;
     text-align: justify;
     width: 60%;
     font-size: 22px;
 }
 
 .skill-title {
+    color: #FFFFFF;
     font-weight: bold;
     margin-bottom: 18px;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -83,6 +86,7 @@
 }
 
 .project-title {
+    color: #FFFFFF;
     margin-bottom: 20px;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                  0px 8px 13px rgba(0,0,0,0.1),
