@@ -127,70 +127,32 @@
     position: relative;
 }
 
-.container {
-    height: 200px;
-    /* width: 600px; */
-    /* top: 60px; */
-    /* left: calc(50% - 300px); */
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-  
-.card2 {
-    display: flex;
-    height: 200px;
-    width: 200px;
-    border-radius: 10px;
-    transition: 0.4s ease-out;
-    position: relative;
-    left: 0px;
-}
-  
-.weather {
-    background-image: url("../images/djong_weather-logo.jpg");
-    background-size: cover;
+#other {
+    width: 60%;
+    margin-top: 50px;
 }
 
-.seiyou {
-    background-image: url("../images/seiyou-logo.jpg");
-    background-size: cover;
-}
-  
-.card2:not(:first-child) {
-      margin-left: -50px;
-}
-  
-.card2:hover {
-    transform: translateY(-20px);
-    transition: 0.4s ease-out;
-}
-  
-.card2:hover ~ .card2 {
-    position: relative;
-    left: 50px;
-    transition: 0.4s ease-out;
-}
-  
-.title-card {
-    color: white;
-    font-weight: 300;
-    position: absolute;
-    left: 20px;
-    top: 15px;
-    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+.gApp {
+    text-align: center;
+    color: #DDDDDD;
+    margin-top: 50px;
 }
 
 @media screen and (width: 1024px) {
-    #about, #project {
+    #about, #project, #other {
         margin-left: 50px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #about, #project {
+    #about, #project, #other {
         margin-left: 32px;
     }
+
+    #other {
+        width: 100%;
+    }
+
     .blank- {
         flex: 0;
     }
@@ -211,17 +173,7 @@
         font-size: 14px;
     }
 
-    .container {
-        height: 150px;
-        /* width: 80%; */
-    }
-    
-    .card2 {
-        height: 150px;
-        width: 150px;
-    }
-
-    .title-card {
-        font-size: 16px;
+    .gApp {
+        text-align: left;
     }
 }

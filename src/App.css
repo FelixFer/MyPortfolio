@@ -5,22 +5,9 @@
 
 .App {
     width: 100vw;
-    /* background: linear-gradient(-45deg, #fae1d9, #ebffea, #e1f7ff, #d7fff6); */
     background-color: #434343;
 	background-size: 400% 400%;
 	animation: gradient 8s ease infinite;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 body {
@@ -32,8 +19,6 @@ body {
     position: fixed;
     height: 100%;
     width: 250px;
-    /* background-image: linear-gradient(to bottom, #b0fffe, #aefbff, #aef7ff, #aef2ff, #afeeff, #b2edff, #b6ebff, #b9eaff, #beecff, #c3edff, #c7efff, #ccf0ff); */
-    /* background-image: linear-gradient(to bottom, #536767, #566b6c, #5a6e71, #5d7275, #61757a, #66797f, #6b7e84, #708289, #778890, #7d8f96, #84959d, #8b9ca4); */
     background-color: #0e0e0e;
     z-index: 1;
 }
@@ -74,7 +59,6 @@ body {
 .btnbar {
     width: 100vw;
     height: 40px;
-    /* background-image: linear-gradient(to top, #c8eeff, #c4eaff, #c2e6ff, #c0e2ff, #c0ddff, #bdd9ff, #bbd6ff, #bad2ff, #b5cfff, #afcbff, #aac8ff, #a4c5ff); */
     background-color: #1c1c1c;
     margin: 0;
     display: flex;

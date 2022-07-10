@@ -1,0 +1,132 @@
+.container {
+    padding: 20px 20px 20px 0px;
+    height: 450px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+  
+.cardA {
+    display: flex;
+    height: 400px;
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+}
+  
+.cardA:not(:first-child) {
+      margin-left: -50px;
+}
+  
+.cardA:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+  
+.cardA:hover ~ .cardA {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+  
+.titleA {
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+
+.g1 {
+    background-image: url("../images/gebetApp1.png");
+    background-size: cover;
+}
+
+.g2 {
+    background-image: url("../images/gebetApp2.png");
+    background-size: cover;
+}
+
+.g3 {
+    background-image: url("../images/gebetApp3.png");
+    background-size: cover;
+}
+
+.g4 {
+    background-image: url("../images/gebetApp4.png");
+    background-size: cover;
+}
+
+@media screen and (min-width: 0px) {
+    .container {
+        height: 220px;
+    }
+    
+    .cardA {
+        height: 180px;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        height: 240px;
+    }
+    
+    .cardA {
+        height: 200px;
+        width: 28%;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .container {
+        height: 320px;
+        margin-left: 0px;
+    }
+    
+    .cardA {
+        height: 280px;
+        width: 27%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        height: 420px;
+    }
+    
+    .cardA {
+        height: 380px;
+        width: 26%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        height: 300px;
+    }
+    
+    .cardA {
+        height: 100%;
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cardA {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .container {
+        height: 450px;
+    }
+    .cardA {
+        height: 400px;
+        width: 200px;
+    }
+}

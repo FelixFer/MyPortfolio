@@ -1,6 +1,7 @@
 import React from "react";
 import PersonIcon from "@mui/icons-material/Person";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
+import CodeIcon from "@mui/icons-material/Code";
 
 export const SidebarData = [
   {
@@ -12,5 +13,10 @@ export const SidebarData = [
     title: "Project",
     icon: <AccountTreeIcon />,
     href: "#project",
+  },
+  {
+    title: "Other Project",
+    icon: <CodeIcon />,
+    href: "#other",
   },
 ];

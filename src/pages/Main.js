@@ -1,6 +1,7 @@
 import React from "react";
 import "./Main.css";
 import Carousel from "../Components/Carousel";
+import Carousel2 from "../Components/Carousel2";
 import ScrollAnimation from "react-animate-on-scroll";
 
 function Main() {
@@ -53,32 +54,26 @@ function Main() {
           <br />
           <br />
 
-          <ScrollAnimation animateIn="animate__fadeInUp">
-            <section id="project">
+          <section id="project">
+            <ScrollAnimation animateIn="animate__backInLeft">
               <h2 className="project-title noCopy">Project</h2>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="animate__jackInTheBox">
               <Carousel />
-              {/* <div class="container noCopy">
-                <div
-                  class="card2 weather"
-                  onClick={openProject("https://djong-weather.vercel.app/")}
-                >
-                  <h4 class="title-card">Djongers Weather</h4>
-                </div>
-                <div
-                  class="card2 seiyou"
-                  onClick={openProject("https://sei-you.vercel.app/welcome")}
-                >
-                  <h4 class="title-card">Seiyou</h4>
-                </div>
-                <div class="card2">
-                <h3 class="title">Card 3</h3>
-              </div>
-              <div class="card2">
-                <h3 class="title">Card 4</h3>
-              </div>
-              </div> */}
-            </section>
-          </ScrollAnimation>
+            </ScrollAnimation>
+          </section>
+
+          <section id="other">
+            <ScrollAnimation animateIn="animate__backInLeft">
+              <h2 className="project-title noCopy">Other Project</h2>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="animate__bounceIn">
+              <h4 className="gApp">Gebet App</h4>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="animate__zoomInUp">
+              <Carousel2 />
+            </ScrollAnimation>
+          </section>
         </div>
       </div>
     </>
