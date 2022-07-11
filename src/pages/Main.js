@@ -55,20 +55,20 @@ function Main() {
           <br />
 
           <section id="project">
-            <ScrollAnimation animateIn="animate__backInLeft">
+            {/* <ScrollAnimation animateIn="animate__backInLeft"> */}
               <h2 className="project-title noCopy">Project</h2>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
             <ScrollAnimation animateIn="animate__jackInTheBox">
               <Carousel />
             </ScrollAnimation>
           </section>
 
           <section id="other">
-            <ScrollAnimation animateIn="animate__backInLeft">
+            {/* <ScrollAnimation animateIn="animate__backInLeft"> */}
               <h2 className="project-title noCopy">Other Project</h2>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
             <ScrollAnimation animateIn="animate__bounceIn">
-              <h4 className="gApp">Gebet App</h4>
+              <h4 className="gApp noCopy">Gebet App</h4>
             </ScrollAnimation>
             <ScrollAnimation animateIn="animate__zoomInUp">
               <Carousel2 />
