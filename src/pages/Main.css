@@ -138,6 +138,32 @@
     margin-top: 50px;
 }
 
+.sandyay-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(10deg);
+    transition: 0.5s;
+    margin-bottom: 50px;
+}
+
+.img-container {
+    margin-top: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container:hover .sandyay-photo {
+    opacity: 0.3;
+}
+
+.img-container .sandyay-photo:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
+
 @media screen and (width: 1024px) {
     #about, #project, #other {
         margin-left: 50px;
@@ -175,5 +201,9 @@
 
     .gApp {
         text-align: left;
+    }
+
+    .img-container{
+        width: 85%;
     }
 }

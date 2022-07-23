@@ -3,6 +3,10 @@ import "./Main.css";
 import Carousel from "../Components/Carousel";
 import Carousel2 from "../Components/Carousel2";
 import ScrollAnimation from "react-animate-on-scroll";
+import sandwich1 from "../images/sandYay1.png";
+import sandwich2 from "../images/sandYay2.png";
+import sandwich3 from "../images/sandYay3.png";
+import sandwich4 from "../images/sandYay4.png";
 
 function Main() {
   // const openProject = (link) => () => {
@@ -56,7 +60,7 @@ function Main() {
 
           <section id="project">
             {/* <ScrollAnimation animateIn="animate__backInLeft"> */}
-              <h2 className="project-title noCopy">Project</h2>
+            <h2 className="project-title noCopy">Project</h2>
             {/* </ScrollAnimation> */}
             <ScrollAnimation animateIn="animate__jackInTheBox">
               <Carousel />
@@ -65,7 +69,7 @@ function Main() {
 
           <section id="other">
             {/* <ScrollAnimation animateIn="animate__backInLeft"> */}
-              <h2 className="project-title noCopy">Other Project</h2>
+            <h2 className="project-title noCopy">Other Project</h2>
             {/* </ScrollAnimation> */}
             <ScrollAnimation animateIn="animate__bounceIn">
               <h4 className="gApp noCopy">Gebet App</h4>
@@ -73,6 +77,23 @@ function Main() {
             <ScrollAnimation animateIn="animate__zoomInUp">
               <Carousel2 />
             </ScrollAnimation>
+            <ScrollAnimation animateIn="animate__bounceIn">
+              <h4 className="gApp noCopy">SandwichYay</h4>
+            </ScrollAnimation>
+            <div className="img-container">
+              <ScrollAnimation animateIn="animate__bounceInLeft">
+                <img className="sandyay-photo" src={sandwich1} />
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="animate__bounceInLeft">
+                <img className="sandyay-photo" src={sandwich2} />
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="animate__bounceInLeft">
+                <img className="sandyay-photo" src={sandwich3} />
+              </ScrollAnimation>
+              <ScrollAnimation animateIn="animate__bounceInLeft">
+                <img className="sandyay-photo" src={sandwich4} />
+              </ScrollAnimation>
+            </div>
           </section>
         </div>
       </div>
