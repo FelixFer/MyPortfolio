@@ -58,8 +58,10 @@ function Sidebar() {
         </a>
         <img className="photoProfile noCopy" src={Photo} />
         <p className="email noCopy">
-          Email me:{" "}
-          <a href="mailto:felixf020401@gmail.com">felixf020401@gmail.com</a>
+          Email me: <a href="mailto:felixfdnd@gmail.com">felixfdnd@gmail.com</a>
+        </p>
+        <p className="phone number noCopy">
+          Phone Number: <a href="https://wa.me/082371176527">082371176527</a>
         </p>
         <ul className="SidebarList noCopy">
           {SidebarData.map((val, key) => {

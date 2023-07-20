@@ -58,6 +58,28 @@ function Main() {
           <br />
           <br />
 
+          <section id="programming">
+            {/* <ScrollAnimation animateIn="animate__backInLeft"> */}
+            <h2 className="project-title noCopy">Programming Languages</h2>
+            {/* </ScrollAnimation> */}
+            <ScrollAnimation animateIn="animate__jackInTheBox">
+              <div>
+                <ul class="check-list">
+                  <li>C</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>Typescript</li>
+                  <li>SQL</li>
+                  <li>PHP</li>
+                  <li>Java</li>
+                  <li>C#</li>
+                  <li>Python</li>
+                </ul>
+              </div>
+            </ScrollAnimation>
+          </section>
+
           <section id="project">
             {/* <ScrollAnimation animateIn="animate__backInLeft"> */}
             <h2 className="project-title noCopy">Project</h2>
@@ -82,18 +104,42 @@ function Main() {
             </ScrollAnimation>
             <div className="img-container">
               <ScrollAnimation animateIn="animate__bounceInLeft">
-                <img className="sandyay-photo" src={sandwich1} />
+                <img className="sandyay-photo" src={sandwich1} alt="" />
               </ScrollAnimation>
               <ScrollAnimation animateIn="animate__bounceInLeft">
-                <img className="sandyay-photo" src={sandwich2} />
+                <img className="sandyay-photo" src={sandwich2} alt="" />
               </ScrollAnimation>
               <ScrollAnimation animateIn="animate__bounceInLeft">
-                <img className="sandyay-photo" src={sandwich3} />
+                <img className="sandyay-photo" src={sandwich3} alt="" />
               </ScrollAnimation>
               <ScrollAnimation animateIn="animate__bounceInLeft">
-                <img className="sandyay-photo" src={sandwich4} />
+                <img className="sandyay-photo" src={sandwich4} alt="" />
               </ScrollAnimation>
             </div>
+          </section>
+
+          <section id="experiences">
+            {/* <ScrollAnimation animateIn="animate__backInLeft"> */}
+            <h2 className="project-title noCopy">Work Experiences</h2>
+            {/* </ScrollAnimation> */}
+            <ScrollAnimation animateIn="animate__jackInTheBox">
+              <div>
+                <ul class="check-list">
+                  <li>IT & WEB Crew | UMN TV | March 2021 – March 2022</li>
+                  <li>
+                    Website division | UMN Festival 2021 | Mei 2021 – December
+                    2021
+                  </li>
+                  <li>
+                    IT & WEB Division | TVONAIR 7.0 | November 2021 – April 2022
+                  </li>
+                  <li>
+                    Mobile Developer Intern | PT Central Artificial Intelligence
+                    | August 2022 – December 2022
+                  </li>
+                </ul>
+              </div>
+            </ScrollAnimation>
           </section>
         </div>
       </div>

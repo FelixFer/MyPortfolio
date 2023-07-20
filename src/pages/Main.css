@@ -14,17 +14,17 @@
     color: #FFFFFF;
     padding-top: 64px;
     text-shadow: 0 1px 0 rgb(161, 161, 161), 
-               0 2px 0 #a4a4a4,
-               0 3px 0 rgb(126, 126, 126),
-               0 4px 0 #757575,
+               /* 0 2px 0 #a4a4a4, */
+               /* 0 3px 0 rgb(126, 126, 126), */
+               /* 0 4px 0 #757575, */
                0 5px 0 rgb(103, 103, 103),
                0 6px 1px rgba(0,0,0,.1),
                0 0 5px rgba(0,0,0,.1),
                0 1px 3px rgba(0,0,0,.3),
                0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+               /* 0 5px 10px rgba(0,0,0,.25), */
+               /* 0 10px 10px rgba(0,0,0,.2), */
+               0 20px 20px rgba(0,0,0,.1);
 }
 
 .intro {
@@ -132,6 +132,18 @@
     margin-top: 30px;
 }
 
+#programming {
+    width: 60%;
+    margin-bottom: 50px;
+    color: rgb(192, 187, 255);
+}
+
+#experiences {
+    width: 60%;
+    margin-bottom: 50px;
+    color: rgb(71, 162, 242);
+}
+
 .gApp {
     text-align: center;
     color: #DDDDDD;
@@ -164,6 +176,33 @@
     opacity: 1;
 }
 
+.check-list {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.check-list li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #00a8a8;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+
 @media screen and (width: 1024px) {
     #about, #project, #other {
         margin-left: 50px;
@@ -185,6 +224,7 @@
     .intro {
         width: 90%;
         font-size: 16px;
+        color: #00a8a8;
     }
 
     .card {
